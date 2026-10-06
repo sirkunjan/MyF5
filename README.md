@@ -4,7 +4,7 @@
 
 Use [Releases](https://github.com/sirkunjan/MyF5/releases/latest), rather than GitHub’s source-code ZIP. The source repository does not contain the bundled runtime, models, or built app.
 
-Download all three `MyF5-Gift-2026-10-06.zip.part1` / `part2` / `part3` files and **Reassemble.MyF5.command** into the same folder. Open the command to assemble and SHA256-verify the gift ZIP. Unzip it, then open **Install MyF5.command**. The full archive is about 2.57 GB; GitHub requires each release asset to be under 2 GiB.
+Download all three `MyF5-Gift-2026-10-06.zip.part1` / `part2` / `part3` files and **Reassemble-MyF5.zip** into the same folder. Unzip that small ZIP, then open **Reassemble MyF5.command** to assemble and SHA256-verify the gift ZIP. Unzip it, then open **Install MyF5.command**. The full archive is about 2.57 GB; GitHub requires each release asset to be under 2 GiB.
 
 This repository is private. Only you and people you explicitly grant access can download it. AirDrop the original full ZIP if you prefer a single-file transfer.
 
