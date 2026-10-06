@@ -1,0 +1,11 @@
+#!/bin/zsh
+# The switch.
+#   ptt-mode        what the button is doing right now
+#   ptt-mode on     the button types what you say
+#   ptt-mode off    the button goes back to Music
+#   ptt-mode review on|off  editable review box or original strip
+#   ptt-mode last   show the last thing you dictated
+export F5_ROOT="$(cd "$(dirname "$0")" && pwd)"
+HELPER="$(cd "$(dirname "$0")" && pwd)/PTTHelper.app/Contents/MacOS/ptt-helper"
+if [ $# -eq 0 ]; then exec "$HELPER" status; fi
+exec "$HELPER" "$@"

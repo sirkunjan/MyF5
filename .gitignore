@@ -1,0 +1,10 @@
+state/
+Journal/
+runtime/
+models/
+PTTHelper.app/
+__pycache__/
+.DS_Store
+*.zip
+*.zip.part*
+com.f5*.plist

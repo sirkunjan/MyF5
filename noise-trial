@@ -1,0 +1,15 @@
+#!/bin/zsh
+ROOT="${0:A:h}"
+exec "$ROOT/runtime/bin/python3" - "$ROOT" "$@" <<'PY'
+import json,sys,os
+from pathlib import Path
+root=Path(sys.argv[1]); command=sys.argv[2] if len(sys.argv)>2 else 'status'; path=root/'state/noise-trial.json'
+if command in ('on','off'):
+    temporary=path.with_suffix('.tmp'); temporary.write_text(json.dumps({'enabled':command=='on'})); os.chmod(temporary,0o600); temporary.replace(path)
+elif command!='status':
+    raise SystemExit('Usage: ./noise-trial on|off|status')
+try: enabled=json.loads(path.read_text()).get('enabled') is True
+except FileNotFoundError: enabled=True
+except (OSError,ValueError): enabled=False
+print('Noise reduction: '+('ON' if enabled else 'OFF'))
+PY
