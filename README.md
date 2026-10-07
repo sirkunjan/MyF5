@@ -1,27 +1,87 @@
 # MyF5 — local dictation and journaling
 
-## Download the ready-to-use gift
+## Install the complete app
 
-Use [Releases](https://github.com/sirkunjan/MyF5/releases/latest), rather than GitHub’s source-code ZIP. The source repository does not contain the bundled runtime, models, or built app.
+**Start here: [Download MyF5](https://github.com/sirkunjan/MyF5/releases/tag/v1.0.0-gift.20261006).**
 
-Download all three `MyF5-Gift-2026-10-06.zip.part1` / `part2` / `part3` files and **Reassemble-MyF5.zip** into the same folder. Unzip that small ZIP, then open **Reassemble MyF5.command** to assemble and SHA256-verify the gift ZIP. Unzip it, then open **Install MyF5.command**. The full archive is about 2.57 GB; GitHub requires each release asset to be under 2 GiB.
+The green **Code → Download ZIP** button and the release's **Source code** links
+contain developer source only. They do **not** include the built app, Python
+runtime or speech models. Use the release assets below for installation.
 
-This repository is private. Only you and people you explicitly grant access can download it. AirDrop the original full ZIP if you prefer a single-file transfer.
+### Check your Mac first
 
+Open **Apple menu → About This Mac**. You need an **Apple Silicon** chip
+(M1 or later) and **macOS 26.2 or later**. Intel Macs and older macOS versions
+are not supported by this package. Allow at least **12 GB free disk space**
+for downloading, unpacking and installing; this is a conservative allowance.
 
-Apple Silicon Mac, macOS Tahoe 26.2 or later. No Xcode, Homebrew, account,
-model downloads, or internet connection is needed for normal installation.
+### Option A: download from GitHub
 
-## Install
+1. Open the download link above. If GitHub says **Page not found**, sign in
+   with the GitHub account invited to this private repository and accept the
+   invitation from your email first.
+2. Under **Assets**, download these **four files** into the same folder:
+   - `MyF5-Gift-2026-10-06.zip.part1` (1 GiB)
+   - `MyF5-Gift-2026-10-06.zip.part2` (1 GiB)
+   - `MyF5-Gift-2026-10-06.zip.part3` (about 421 MB)
+   - `Reassemble-MyF5.zip` (small helper ZIP)
+3. Wait until all downloads finish. Do not rename or unzip the `.part` files.
+4. Double-click `Reassemble-MyF5.zip`, then open the extracted
+   **Reassemble MyF5.command**. Keep it in the folder containing all three parts.
+   It joins the parts and verifies the checksum before producing
+   **MyF5-Gift-2026-10-06.zip**. If it reports a missing part or checksum failure,
+   download the missing or damaged files again; do not install an unverified ZIP.
+5. Double-click the completed gift ZIP. Open its **MyF5** folder, then open
+   **Install MyF5.command**. Keep the whole extracted folder together.
 
-1. Unzip MyF5 and open **Install MyF5.command**. It installs under ~/MyF5
-   and refuses to overwrite an existing installation.
-2. Grant Microphone and Accessibility to MyF5 (older entries can say PTTHelper
-   or K PTT). This locally signed app is not notarized; review any macOS security
-   prompt through Privacy & Security. The installer does not disable Gatekeeper.
-3. Follow the welcome screens. No voice enrollment is needed.
-4. Place your cursor in a document, press Play/Pause, wait for the tick, speak,
-   then press Play/Pause again or Enter in the draft to finish.
+GitHub limits individual release assets to under 2 GiB; the complete gift ZIP
+is about 2.57 GB, so it is split into three parts. The standalone `.sha256` and
+`Reassemble.MyF5.command` assets are optional; the four files above are sufficient.
+
+### Option B: USB drive or AirDrop
+
+Receive **MyF5-Gift-2026-10-06.zip** (about 2.57 GB), copy it to your Mac,
+then unzip it and open **MyF5 → Install MyF5.command**. No reassembly is needed.
+This is the same installer as the GitHub download.
+
+### Permissions and first test
+
+1. The installer creates `~/MyF5` and refuses to replace an existing installation.
+   If that folder exists, preserve it and ask for update instructions.
+2. This app is locally signed and **not notarized by Apple**. If macOS blocks
+   opening it, review **System Settings → Privacy & Security** and the available
+   **Open Anyway** action for the file you intended to open. Do not disable
+   Gatekeeper. If opening is still blocked, report the exact message.
+3. Follow MyF5's welcome screens and grant **Microphone** and **Accessibility**
+   permissions. Older permission entries may say **PTTHelper** or **K PTT**.
+   No voice enrollment is needed. Normal installation requires no Xcode,
+   Homebrew, Python install, account, model download or internet connection.
+4. In **System Settings → Sound → Input**, select **MacBook Pro Microphone**
+   (or your Mac's built-in microphone) for the first test.
+5. Open TextEdit, create a document, and place your cursor in it. Select MyF5
+   **Dictation** mode from its menu. Press the Mac keyboard **Play/Pause** key,
+   wait for the tick and draft, then say **“The blue notebook is on the table.”**
+6. Press **Enter in the MyF5 draft**. The draft should close and insert the words
+   in TextEdit. It does not send Enter to the destination by default.
+7. Repeat, finishing with the Mac **Play/Pause** key. Then connect your headphones,
+   select the desired input in macOS Sound, and test their **Play/Pause** button
+   once to start and once to finish. Use a quick press, not an assistant hold.
+
+### If something fails
+
+| What you see | What to do |
+| --- | --- |
+| Source files but no app/runtime/models | Download the release's four installer files, not Source code |
+| GitHub Page not found | Sign in as the invited account and accept the invitation |
+| Missing part/checksum failure | Finish or repeat the three part downloads; keep their filenames |
+| Existing installation warning | Preserve `~/MyF5`; do not delete your journals or settings |
+| No draft opens | Check MyF5 is running in Dictation mode and Accessibility is granted |
+| Draft opens but no words | Check Microphone permission and macOS Sound input; wait for the tick |
+| Headphone finish fails | Finish with Enter; test the Mac keyboard and report headset/OS details |
+
+When reporting a problem, send the exact error or screenshot, Mac chip,
+macOS version, downloaded filenames, microphone and button used. Recipient
+installation is not yet verified; device compatibility varies.
 
 ## Everyday use
 
