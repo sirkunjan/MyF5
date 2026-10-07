@@ -18,8 +18,7 @@ for downloading, unpacking and installing; this is a conservative allowance.
 ### Option A: download from GitHub
 
 1. Open the download link above. If GitHub says **Page not found**, sign in
-   with the GitHub account invited to this private repository and accept the
-   invitation from your email first.
+   again using the link above. This repository is public; no invitation is needed.
 2. Under **Assets**, download these **four files** into the same folder:
    - `MyF5-Gift-2026-10-06.zip.part1` (1 GiB)
    - `MyF5-Gift-2026-10-06.zip.part2` (1 GiB)
@@ -72,7 +71,7 @@ This is the same installer as the GitHub download.
 | What you see | What to do |
 | --- | --- |
 | Source files but no app/runtime/models | Download the release's four installer files, not Source code |
-| GitHub Page not found | Sign in as the invited account and accept the invitation |
+| GitHub Page not found | Use the release link above; public downloads need no invitation |
 | Missing part/checksum failure | Finish or repeat the three part downloads; keep their filenames |
 | Existing installation warning | Preserve `~/MyF5`; do not delete your journals or settings |
 | No draft opens | Check MyF5 is running in Dictation mode and Accessibility is granted |
@@ -212,3 +211,11 @@ shadow-matching prototype is excluded from this release. Earlier diagnostics
 and microphone/Siri popup failures are development history, not current verified
 recipient behavior. Current successful tests had no such popups; Bluetooth
 routing still needs testing on the recipient's Mac.
+
+## License
+
+MyF5's original source code is licensed under the [MIT License](LICENSE).
+Bundled third-party libraries, runtimes and model weights retain their own
+licenses; MIT does not relicense them. See [DEPENDENCIES.md](DEPENDENCIES.md)
+and the license/notice files included in the installer. The original 6 October
+installer archive is unchanged; this source license is published here separately.
