@@ -17,8 +17,8 @@ for downloading, unpacking and installing; this is a conservative allowance.
 
 ### Option A: download from GitHub
 
-1. Open the download link above. If GitHub says **Page not found**, sign in
-   again using the link above. This repository is public; no invitation is needed.
+1. Open the download link above. This repository is public; no invitation
+   or GitHub sign-in is needed to download the installer.
 2. Under **Assets**, download these **four files** into the same folder:
    - `MyF5-Gift-2026-10-06.zip.part1` (1 GiB)
    - `MyF5-Gift-2026-10-06.zip.part2` (1 GiB)
